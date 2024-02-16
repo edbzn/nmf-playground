@@ -1,11 +1,5 @@
-import { Component, HostListener, inject } from '@angular/core';
-import {
-  Event,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-  RouterOutlet,
-} from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -14,7 +8,7 @@ import {
   styles: `
     nav {
       padding: 10px;
-      background-color: #f0f0f0;
+      background-color: #e6e6e6;
     }
     nav ul {
       list-style-type: none;
@@ -35,7 +29,12 @@ import {
     <nav>
       <ul>
         <li>
-          <a routerLink="/" routerLinkActive="active">Host</a>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Host</a
+          >
         </li>
         <li>
           <a routerLink="/mfe1" routerLinkActive="active">Snake</a>
@@ -48,11 +47,4 @@ import {
     <router-outlet />
   `,
 })
-export class AppComponent {
-  private router = inject(Router);
-
-  @HostListener('window.childRouteChanged', ['&event'])
-  changeRoute(event: Event & { data: { routeName: string } }) {
-    this.router.navigate([event.data.routeName]);
-  }
-}
+export class AppComponent {}

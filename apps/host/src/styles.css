@@ -4,5 +4,12 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #f8f8f8;
+  background-color: #efefef;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  background: #fff;
+  height: calc(100% - 111px);
 }

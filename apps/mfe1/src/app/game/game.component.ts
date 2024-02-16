@@ -32,8 +32,9 @@ import {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      height: calc(100% - 71px);
       position: relative;
+      background-color: #000;
     }
 
     .score {

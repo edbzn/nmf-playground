@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
       <h1 class="menu__title">Snake</h1>
       <div class="menu__content">
         <div class="menu__item">
-          <a routerLink="/game">Start Game</a>
+          <a routerLink="../game">Start Game</a>
         </div>
       </div>
     </div>
@@ -20,8 +20,8 @@ import { RouterLink } from '@angular/router';
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
       background-color: #000;
+      height: calc(100% - 71px);
     }
 
     .menu {
