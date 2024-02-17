@@ -46,7 +46,8 @@
         "browser": "apps/host/src/main.ts",
         "polyfills": [
           "zone.js",
-          "es-module-shims"
+          "es-module-shims",
+          "import-map-overrides"
         ],
         "tsConfig": "apps/host/tsconfig.app.json",
         "assets": [

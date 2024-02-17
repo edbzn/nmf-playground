@@ -35,6 +35,9 @@ dependencies:
   es-module-shims:
     specifier: ^1.5.12
     version: 1.8.2
+  import-map-overrides:
+    specifier: ^3.1.1
+    version: 3.1.1
   rxjs:
     specifier: ~7.8.0
     version: 7.8.1
@@ -6271,7 +6274,6 @@ packages:
   /cookie@0.4.2:
     resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
     engines: {node: '>= 0.6'}
-    dev: true
 
   /cookie@0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
@@ -7990,6 +7992,12 @@ packages:
     dependencies:
       pkg-dir: 4.2.0
       resolve-cwd: 3.0.0
+
+  /import-map-overrides@3.1.1:
+    resolution: {integrity: sha512-NgET1tr18FQa+/7y6TPGU1U+EhmxluzsVtwwuE0t1OiTBXwwWstHm2hMOH1MSwlmIiDf6ztjArQmVjv3eVJKAw==}
+    dependencies:
+      cookie: 0.4.2
+    dev: false
 
   /imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
