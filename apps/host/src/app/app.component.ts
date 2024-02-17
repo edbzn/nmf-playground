@@ -37,7 +37,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
           >
         </li>
         <li>
-          <a routerLink="/mfe1" routerLinkActive="active">Snake</a>
+          <a routerLink="/snake" routerLinkActive="active">Snake</a>
         </li>
         <li>
           <a routerLink="/mfe2" routerLinkActive="active">MFE2</a>

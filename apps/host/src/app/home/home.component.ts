@@ -7,7 +7,7 @@ import { RouterLink } from "@angular/router";
   template: `
     <div class="content">
       <h1>Host</h1>
-      <a routerLink="/mfe1">Snake</a>
+      <a routerLink="/snake">Snake</a>
       <a routerLink="/mfe2">MFE2</a>
     </div>
   `,

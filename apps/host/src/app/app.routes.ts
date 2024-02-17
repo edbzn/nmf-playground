@@ -9,7 +9,7 @@ export const routes: Route[] = [
     component: HomeComponent,
   },
   {
-    path: 'mfe1',
+    path: 'snake',
     loadChildren: () =>
       loadRemoteModule('mfe1', './routes').then((m) => m.routes),
   },
@@ -24,7 +24,7 @@ export const routes: Route[] = [
   },
   {
     path: '**',
-    redirectTo: '/not-found',
+    redirectTo: 'not-found',
     pathMatch: 'full',
   },
 ];
