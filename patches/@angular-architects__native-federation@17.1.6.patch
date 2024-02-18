@@ -1,0 +1,25 @@
+diff --git a/src/utils/updateIndexHtml.js b/src/utils/updateIndexHtml.js
+index 3c057ccfe9affde64b13fd0599cd1077b641339d..33b352d97a17249ee66cbbfab9b6a7b637247cf4 100644
+--- a/src/utils/updateIndexHtml.js
++++ b/src/utils/updateIndexHtml.js
+@@ -22,16 +22,20 @@ function updateScriptTags(indexContent, mainName, polyfillsName) {
+     const htmlFragment = `
+ <script type="esms-options">
+ {
+-  "shimMode": true
++  "shimMode": true,
++  "mapOverrides": true
+ }
+ </script>
+-
++<script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+ <script type="module" src="${polyfillsName}"></script>
+ <script type="module-shim" src="${mainName}"></script>
++
+ `;
+     indexContent = indexContent.replace(/<script src="polyfills.*?>/, '');
+     indexContent = indexContent.replace(/<script src="main.*?>/, '');
+     indexContent = indexContent.replace('</body>', `${htmlFragment}</body>`);
+     return indexContent;
+ }
+ exports.updateScriptTags = updateScriptTags;

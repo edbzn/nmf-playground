@@ -36,7 +36,7 @@
       }
     },
     "esbuild": {
-      "executor": "@angular-devkit/build-angular:application",
+      "executor": "@nx/angular:application",
       "outputs": [
         "{options.outputPath}"
       ],
@@ -46,8 +46,7 @@
         "browser": "apps/host/src/main.ts",
         "polyfills": [
           "zone.js",
-          "es-module-shims",
-          "import-map-overrides"
+          "es-module-shims"
         ],
         "tsConfig": "apps/host/tsconfig.app.json",
         "assets": [
@@ -84,7 +83,7 @@
       "defaultConfiguration": "production"
     },
     "serve-original": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "host:esbuild:production"
